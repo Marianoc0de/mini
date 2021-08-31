@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Soprano's Pizza</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar"></nav>
+<nav class="navbar navbar-expand bg-danger navbar-light justify-content-center">
+    <img src="logo sopranos2.png" class="center" width="212" height="81">
+</nav>
+<nav class="navbar navbar-expand navbar-light justify-content-center mb-4">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item active bg-danger">
+            <a class="nav-link" href="Bestellen.html">Bestellen</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Contact.html">Contact</a>
+        </li>
+    </ul>
+</nav>
+<form name = "Bestele" method = "post" action ="bestellen.php">
+    <div class= "container">
+    <div class="row">
+        <div class="row col-sm-6 col-lg-6 mb-4 bg-light mx-auto"> i.v.m. corona worden pizza's allen bezorgd. de minimale
+            prijs voor bezorging is 15 euro.
+        </div>
+        <div class="col-lg-8 col-sm-6 bg-light mx-auto">
+            <h5>Bestelformulier</h5>
+            <div class="form-group">
+                <label for="pizza1">Pizza:</label>
+                <select class="form-group" name="Pselect">
+                    <option>Cheesy Steak</option>
+                    <option>Vegetariano vegan</option>
+                    <option>Quattro fromaggi</option>
+                    <option>Sopranos Deluxe</option>
+                </select>
+            </div> 
+            <div>
+                <label>Pizzagrootte:</label>
+                <div class="radio">
+                    <label><input type="radio" name="optradio" value="5"> small (small 15 cm) 5 euro</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio" value="10"> meduin (small 25 cm) 10 euro</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio" value="13"> calzone (35 cm) 13 euro</label>
+                </div>
+            </div>
+            <div>
+                <label>Toppings:</label>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="2" name="rbToppings"> Pecorino: 2 euro</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="2" name="rbToppings"> Salami: 2 euro</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="2" name="rbToppings"> Zwarte olijven: 2 euro</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="2" name="rbToppings"> Spaanse peper: 2 euro</label>
+                  </div>
+            </div>
+            <div>
+                <div class="form-group">
+                    <label for="AantalP">Aantal pizza's:</label>
+                    <select class="form-control col-lg-1 col-sm-5" name="AantalP">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+            </div>
+            <div class="form-group">
+                <label for="Pcode">Postcode:</label>
+                <input type="text" class="form-control col-sm-8 col-lg-5" name="Pcode" placeholder="bv. 1234ab">
+              </div>
+              <div class="form-group">
+                <label for="Hnummer">Huisnummer:</label>
+                <input type="text" class="form-control col-sm-8 col-lg-5" name="Hnummer" placeholder="bv. 100">
+              </div>
+            <div>
+                <div class="form-group">
+                    <label for="naam">Naam:</label>
+                    <input type="text" class="form-control col-lg-5 col-sm-8" name="naam">
+                </div>
+                <input type="submit" class="bg-success " href="Contact.html" name="bestel" value="bestel">
+            </div>
+        </div>
+    </div>
+</div>
+</form>
+
+</body>
+</html>
